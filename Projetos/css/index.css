@@ -1,0 +1,55 @@
+
+@import "reset.css";
+
+*{
+	box-sizing: border-box;
+ }
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+
+header{
+	background-color: #333;
+	height: 5em;
+	color: #FFF;
+	margin-bottom: 1em;
+}
+
+header h1{
+	font-size: 2em;
+	display:inline-block;
+	vertical-align:	middle;
+}
+
+header .container:before{
+	content: '';
+	display:inline-block;
+	height: 100%;
+	vertical-align:	middle;
+}
+
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.listaprojetos ul li{	
+	display: block;
+	width: 300px;
+	height: 150px;
+	background-color: black;
+	text-align: center;
+	margin: 30px;
+	float: left;
+}
+
+.listaprojetos ul li label{
+	display: block;
+	padding-top: 70px;
+	color: white;	
+
+}
+
