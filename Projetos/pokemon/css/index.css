@@ -7,7 +7,18 @@
 
 body{
 	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-	font-size: 14px;
+	font-size: 14px;		
+	width: 100%;
+	height: 100vh;
+	display: block;
+	background-color: #A52A2A;
+}
+
+main{
+	width: 100vw;
+	height: 100vh;
+
+	
 }
 
 header{
@@ -36,20 +47,176 @@ header .container:before{
 	margin: 0 auto;
 }
 
-.listaprojetos ul li{	
+
+.listaprojetos{
+	display: block;	
+	margin: 0 auto;
+
+	
+	width: 100%;
+   
+}
+
+.listaprojetos li{	
 	display: block;
 	width: 500px;
-	height: 250px;
-	background-color: black;
-	text-align: center;
+	height: 250px;	
 	margin: 30px;
 	float: left;
+	cursor: pointer;
+
+
+	
 }
 
-.listaprojetos ul li label{
+.listaprojetos .expande{		
+	height: 560px;	
 	display: block;
-	padding-top: 70px;
-	color: white;	
+}
+
+.listaprojetos div{	
+	margin-top: 20px;	
+}
+
+.InfoPoke{
+	display: inline-block;	
+	width: 250px;
+	height: 125px;
+	cursor: inherit;	
+}
+
+.ImgPoke{
+	
+	float: right;
+	height: 250px;
+	width: 250px;
+	position: relative;
+	padding: 5px;
+}
+
+.tipos{
+	display: block;			
+	width: 250px;
+	height: 30px; ;
+	padding-left: 10px;
+	cursor: inherit;	
+}
+
+.TipoPoke {
+	display: block;
+	float: left;
+	margin-left: 10px;
+	
+	width: 100px ;
+	height: 100%;
+	border-radius: 5px;	
+	cursor: inherit;	
+}
+
+.TipoPoke label{
+	text-transform: capitalize;
+	border-left: 5px;
+	display: block;
+	float: left;
+	width: 80%;	
+	text-align: left;
+	font-size: 20px;
+	height: 100%;
+	padding-top: 6%;
+	padding-left: 5px;
+	cursor: inherit;	
+}
+
+.TipoPoke img{
+	
+	display: block;
+	float: left;
+	width: 20%;
+	height: 100%;
+	padding-left: 5px;
+	cursor: inherit;	
+}
+
+label{
+	color:white
+}
+
+.CodigoPoke{
+	font-weight: bold;
+	font-size: 2em;
+	color: black;
+	text-shadow: 0 0 1px white;
+	display: inline-block;
+	width: 100%;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 15px;
+	cursor: inherit;	
+}
+
+.CodigoPoke:before{
+    content: "#";
+}
+
+.NomePoke::first-letter{
+	text-transform: uppercase;
+}
+.NomePoke{	
+	width: 100%;
+	font-weight: bold;
+	font-size: 3em;
+	text-shadow: 0 0 1px black;
+	display: inline-block;
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 15px;
+	cursor: inherit;	
 
 }
+
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 30%; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	background-color:black;
+	color: white;
+	margin: 0 auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 40%;
+
+	font-size: 2em;
+	text-align: center;
+  }  
+
+  .modal-content img {
+	margin: 0 auto;
+	height: 30px;
+	width: 30px;	
+  }  
+
+  #filtrar-tabela {
+    width: 350px;
+	height: 35px;
+	margin-left: 30px;
+  
+}
+
+  .hide{ display: none !important;}
+
+
 

@@ -1,21 +1,26 @@
 var filtro = document.querySelector("#filtrar-tabela");
 
 filtro.addEventListener("input",function(){
-    var pacientes = document.querySelectorAll(".paciente");
-    pacientes.forEach(checkpacientes) 
+    var item = document.querySelectorAll("li");
+    item.forEach(checkitem) 
 })
 
-function checkpacientes(item){ 
+function checkitem(item){ 
 
-    var tdnome = item.querySelector(".info-nome");
+    var nome = item.querySelector(".NomePoke").innerHTML;
 
-    var nome = tdnome.textContent;
+    var codigo = item.querySelector(".CodigoPoke").innerHTML;
+  
     var filtro = document.querySelector("#filtrar-tabela").value;
 
     var expressao = new RegExp(filtro,"i")
  
+    console.log(expressao.test(codigo));
+    console.log(expressao.test(nome));   
+    console.log((filtro.length = 0));
+    console.log("");
 
-    if((expressao.test(nome)) || (filtro.length = 0)){
+    if(      (expressao.test(nome)) ||(expressao.test(codigo)) || (filtro.length = 0)) {        
        item.classList.remove("hide") 
     } else{
         item.classList.add("hide")   

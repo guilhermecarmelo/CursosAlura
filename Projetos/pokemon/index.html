@@ -10,23 +10,33 @@
 <body>
 	<header>
 		<div class="container">
-			<h1 class="titulo">GLC Pokédex</h1>
+			<h1 class="titulo">GLC Pokédex</h1>			
+			
 		</div>
 	</header>
 
-	<main class="listaprojetos">
-		<ul>
-			<Li>
-				<label>Pokemon</label>
-			</Li>
+	<main>
+		<div id="myModal" class="modal">
 
-		</ul>
+
+			<div class="modal-content">
+				<img src="img/loading.gif" alt="Carregando">
+				<p>Aguarde, carregando informações.</p>				
+			</div>
+
+		</div>
+
+		<input type="text" name="filtro" id="filtrar-tabela" placeholder="What Pokémon are you looking for?">
+		<ol class="listaprojetos" id="lista01">
+
+		</ol>
 	</main>
 
-
-
-
+	<script src="js/detalha.js"></script>
+	<script src="js/filtra.js"></script>	
+	<script src="js/addpokemon.js"></script>	
 	<script src="js/Busca-pokemons.js"></script>
+
 </body>
 
 
